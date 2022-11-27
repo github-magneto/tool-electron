@@ -1,11 +1,13 @@
 {
   "name": "app",
   "version": "0.0.0",
-  "dependencies": {
-    "electron": "^19.0.6"
+  "dependencies": {},
+  "devDependencies": {
+    "electron": "^21.3.1",
+    "electron-packager": "^17.1.1"
   },
-  "devDependencies": {},
   "scripts": {
-    "start": "electron src/"
+    "start": "electron src/",
+    "build": "electron-packager ./ electron --all --out=./dist --app-version=1.0.0 --overwrite"
   }
 }
